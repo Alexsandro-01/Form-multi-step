@@ -1,0 +1,21 @@
+/* .step {
+  padding: 1em 2em;
+} */
+
+/* .step > div {
+  width: 80%;
+} */
+
+.step .title-box {
+  padding: 1em 0;
+}
+
+.title-box h2 {
+  padding: 0.5rem 0;
+  color: var(--marine);
+}
+
+.title-box p {
+  color: var(--cool);
+  font-size: 0.8em;
+}

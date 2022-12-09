@@ -1,0 +1,73 @@
+:root {
+  --marine: #02295a;
+  --purplish: #473dff;
+  --pastel: #adbeff;
+  --light: #bfe2fd;
+  --strawberry: #ed3548;
+
+  --cool: hsl(231, 11%, 63%);
+  --lightgray: hsl(229, 24%, 87%);
+  --magnolia: hsl(217, 100%, 97%);
+  --alabaster: hsl(231, 100%, 99%);
+  --white: hsl(0, 0%, 100%);
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url('../assets/fonts/Ubuntu-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url('../assets/fonts/Ubuntu-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url('../assets/fonts/Ubuntu-Bold.ttf');
+  font-weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Ubuntu;
+}
+
+main {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: var(--magnolia);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em 0;
+}
+
+.input-box label {
+  font-weight: 500;
+  font-size: 0.8em;
+}
+
+.input-box input {
+  margin: 0.25em 0;
+  padding: 0.75em;
+  font-weight: 500;
+  border-radius: 0.5em;
+  border: solid 1px var(--lightgray);
+  color: var(--marine);
+  outline-color: var(--purplish);
+  cursor: pointer;
+}
