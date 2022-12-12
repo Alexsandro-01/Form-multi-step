@@ -59,6 +59,7 @@ main {
 .input-box label {
   font-weight: 500;
   font-size: 0.8em;
+  padding: 0.25em 0;
 }
 
 .input-box input {
