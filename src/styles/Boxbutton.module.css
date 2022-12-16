@@ -1,7 +1,7 @@
 .container {
   display: flex;
   justify-content: space-between;
-  padding: 2em 0 1em;
+  padding: 2em 0 .5em;
   align-items: flex-end;
 }
 
