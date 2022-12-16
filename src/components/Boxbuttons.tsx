@@ -1,16 +1,30 @@
 import React from 'react';
 import styles from '../styles/Boxbutton.module.css';
+import { IButtons } from '../interfaces/IButtons';
 
-function Boxbuttons() {
+function Boxbuttons({ step, handleStep }: IButtons) {
+
   return (
     <div className={styles.container}>
-      <button
-        className={styles.go_back}
-        >
-        Go Back
-      </button>
+      <div>
+        {
+          step > 1 && (
+            <button
+              type='button'
+              className={styles.go_back}
+              onClick={
+                () => handleStep(step - 1, undefined)
+              }
+            >
+              Go Back
+            </button>
+          )
+        }
+      </div>
+
       <button
         className={styles.next_step}
+        type='submit'
       >
         Next Step
       </button>
