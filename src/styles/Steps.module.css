@@ -1,3 +1,32 @@
+.input-box {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em 0;
+}
+
+.input-box p {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 0.8em;
+  padding: 0.25em 0;
+}
+
+.input-box p span {
+  color: #ed3548;
+}
+
+.input-box-input {
+  margin: 0.25em 0;
+  padding: 0.75em;
+  font-weight: 500;
+  border-radius: 0.5em;
+  border: solid 1px var(--lightgray);
+  color: var(--marine);
+  outline-color: var(--purplish);
+  cursor: pointer;
+}
+
 .step .title-box {
   padding: 1em 0;
 }
@@ -12,6 +41,10 @@
   font-size: 0.8em;
 }
 
+.invalid {
+  border: 1px solid #ed3548;
+}
+
 /* Step two */
 
 .box-card {
@@ -20,7 +53,7 @@
   padding: 1em 0;
 }
 
-.card input {
+.card input[type="radio"] {
   opacity: 0;
   width: 0;
   height: 0;
@@ -134,4 +167,58 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+
+/* STEP THREE */
+
+.box-card-add-ons {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-card-add-ons .card {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: .5em 0;
+}
+
+.box-card-add-ons .card .content {
+  display: flex;
+  align-items: center;
+}
+
+.box-card-add-ons .card .info {
+  margin-left: 1em;
+}
+
+.box-card-add-ons .card .check-service {
+  border: 1px  solid var(--lightgray);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: .3em;
+}
+
+.box-card-add-ons input[type='checkbox'] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.box-card-add-ons input[type='checkbox']:checked + .check-service {
+  background-color: var(--purplish);
+  background-image: url('../assets/images/icon-checkmark.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.box-card-add-ons .card input {
+  font-size: 2em;
+}
+
+.box-card-add-ons .card .info {
+  padding: 0;
 }
