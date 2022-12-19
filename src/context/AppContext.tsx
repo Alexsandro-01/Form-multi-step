@@ -1,9 +1,5 @@
-import { createContext, Dispatch, SetStateAction } from 'react';
-
-export interface IAppContext {
-  stepNumber: number;
-  setStepNumber: Dispatch<SetStateAction<number>>
-}
+import { createContext } from 'react';
+import { IAppContext } from '../interfaces/IContext';
 
 const AppContext = createContext<IAppContext | undefined>(undefined);
 
