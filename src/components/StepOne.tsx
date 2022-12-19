@@ -1,7 +1,25 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import appContext from '../context/AppContext';
+import { IfieldsValidations, IPersonalInfo } from '../interfaces/IContext';
 import styles from '../styles/Steps.module.css';
 
 function StepOne() {
+  const ctx = useContext(appContext);
+  const { name, email, phone } = ctx?.personalInfo as IPersonalInfo;
+  const { nameError, emailError, phoneError } = ctx?.fieldesValidations as IfieldsValidations;
+
+  function maskPhone(value: string) {
+    value = value.replace(/\D/g, '');
+    value = value.replace(/^(\d{2})(\d)/g, '($1) $2');
+    value = value.replace(/(\d)(\d{4})$/, '$1-$2');
+
+
+    ctx?.setPersonalInfo({
+      ...ctx.personalInfo,
+      phone: value
+    });
+  }
+  
   return (
     <div className={styles.step}>
       <div className={styles['title-box']}>
@@ -12,33 +30,81 @@ function StepOne() {
       </div>
 
       <div>
-        <div className='input-box'>
-          <label htmlFor="name">Name</label>
+        <div className={styles['input-box']}>
+          <p>
+            <label htmlFor="name">Name</label>
+            <span>{nameError && (nameError)}</span>
+          </p>
           <input
             type='text'
             id='name'
-            required
+            value={ name }
             placeholder='e.g. Stephen King'
-          />
+            className={
+              `
+              ${styles['input-box-input']}
+              ${nameError && (styles.invalid)}
+              `
+            }
+            onChange={
+              ({ target }) => ctx?.setPersonalInfo({
+                ...ctx.personalInfo,
+                name: target.value
+              })
+            }
+            />
         </div>
 
-        <div className='input-box'>
-          <label htmlFor="email">Email Address</label>
+        <div className={styles['input-box']}>
+          <p>
+            <label htmlFor="email">Email Address</label>
+            <span>{emailError && (emailError)}</span>
+          </p>
           <input
             type='email'
             id='email'
-            required
+            value={ email }
             placeholder='e.g. stephenking@lorem.com'
+            className={
+              `
+              ${styles['input-box-input']}
+              ${emailError && (styles.invalid)}
+              `
+            }
+            onChange={
+              ({ target }) => ctx?.setPersonalInfo({
+                ...ctx.personalInfo,
+                email: target.value
+              })
+            }
           />
         </div>
 
-        <div className='input-box'>
-          <label htmlFor="phone">Phone Number</label>
+        <div className={styles['input-box']}>
+          <p>
+            <label htmlFor="phone">Phone Number</label>
+            <span>{phoneError && (phoneError)}</span>
+          </p>
           <input
-            type='text'
+            type='tel'
             id='phone'
-            required
-            placeholder='e.g. (00) 0 0000-0000'
+            value={ phone }
+            placeholder='e.g. (00) 00000-0000'
+            className={
+              `
+              ${styles['input-box-input']}
+              ${phoneError && (styles.invalid)}
+              `
+            }
+            onChange={
+              ({ target }) => {
+                // ctx?.setPersonalInfo({
+                //   ...ctx.personalInfo,
+                //   phone: target.value
+                // });
+                maskPhone(target.value);
+              }
+            }
           />
         </div>
       </div>
