@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from '../styles/Steps.module.css';
+import AppContext from '../context/AppContext';
+import { IAdd, IPlan } from '../interfaces/IContext';
 
 const StepThree = () => {
+  const ctx = useContext(AppContext);
+  const { 
+    onlineService,
+    largeStorage,
+    customizableProfile } = ctx?.add as IAdd;
+  
+  const { period } = ctx?.plan as IPlan;
+
+
   return (
     <div className={styles.step}>
       <div className={styles['title-box']}>
@@ -12,10 +23,25 @@ const StepThree = () => {
       </div>
 
       <div className={styles['box-card-add-ons']}>
-        <label htmlFor='service' className={styles.card}>
+        <label htmlFor='service' className={
+            `
+            ${styles.card}
+            ${onlineService && (styles['card-selected'])}
+            `
+          }>
           <div className={styles.content}>
             <div>
-              <input type="checkbox" id='service' />
+              <input
+                type="checkbox"
+                id='service'
+                checked={onlineService}
+                onChange={() => {
+                  ctx?.setAdd({
+                    ...ctx.add,
+                    onlineService: !onlineService
+                  });
+                }}
+              />
               <span className={styles['check-service']}></span>
             </div>
             <div className={styles.info}>
@@ -24,13 +50,34 @@ const StepThree = () => {
             </div>
           </div>
 
-          <p>+$1/mo</p>
+          {
+            period === 'monthly' ? (
+              <p className={styles.price}>+$1/mo</p>
+            ) : (
+              <p className={styles.price}>+$10/yr</p>
+            )
+          }
         </label>
 
-        <label htmlFor='storage' className={styles.card}>
+        <label htmlFor='storage' className={
+            `
+            ${styles.card}
+            ${largeStorage && (styles['card-selected'])}
+            `
+          }>
           <div className={styles.content}>
             <div>
-              <input type="checkbox" id='storage' />
+              <input
+                type="checkbox"
+                id='storage'
+                checked={largeStorage}
+                onChange={() => {
+                  ctx?.setAdd({
+                    ...ctx.add,
+                    largeStorage: !largeStorage
+                  });
+                }}
+              />
               <span className={styles['check-service']}></span>
             </div>
             <div className={styles.info}>
@@ -39,13 +86,34 @@ const StepThree = () => {
             </div>
           </div>
 
-          <p>+$2/mo</p>
+          {
+            period === 'monthly' ? (
+              <p className={styles.price}>+$2/mo</p>
+            ) : (
+              <p className={styles.price}>+$20/yr</p>
+            )
+          }
         </label>
 
-        <label htmlFor='profile' className={styles.card}>
+        <label htmlFor='profile' className={
+            `
+            ${styles.card}
+            ${customizableProfile && (styles['card-selected'])}
+            `
+          }>
           <div className={styles.content}>
             <div>
-              <input type="checkbox" id='profile' />
+              <input
+                type="checkbox"
+                id='profile'
+                checked={customizableProfile}
+                onChange={() => {
+                  ctx?.setAdd({
+                    ...ctx.add,
+                    customizableProfile: !customizableProfile
+                  });
+                }}
+              />
               <span className={styles['check-service']}></span>
             </div>
             <div className={styles.info}>
@@ -53,7 +121,13 @@ const StepThree = () => {
               <span>Custom theme on your profile</span>
             </div>
           </div>
-          <p>+$2/mo</p>
+          {
+            period === 'monthly' ? (
+              <p className={styles.price}>+$2/mo</p>
+            ) : (
+              <p className={styles.price}>+$20/yr</p>
+            )
+          }
         </label>
       </div>
     </div>
