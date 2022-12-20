@@ -23,7 +23,7 @@ function App() {
   function validations(value: number) {
     const { name, email, phone } = ctx?.personalInfo as IPersonalInfo;
 
-    const phoneNumber = phone.replace(' ', '').replace('(', '').replace(')', '');
+    const phoneNumber = phone.replace(' ', '').replace('(', '').replace(')', '').replace('-', '');
     const validEmail = /\S+@\S+\.\S+/;
 
     if (!name) {
@@ -49,7 +49,7 @@ function App() {
         emailError: '',
         phoneError: 'This field is required'
       });
-    } else if (phoneNumber.length < 11) {
+    } else if (phoneNumber.length !== 11) {
       ctx?.setFieldsValidations({
         nameError: '',
         emailError: '',
