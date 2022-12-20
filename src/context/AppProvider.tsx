@@ -15,9 +15,24 @@ function AppProvider(props: PropsWithChildren<unknown>) {
     phoneError: ''
   });
 
+  const [plan, setPlan] = useState({
+    planName: 'arcade',
+    period: 'monthly'
+  });
+
+  const [add, setAdd] = useState({
+    onlineService: false,
+    largeStorage: false,
+    customizableProfile: false
+  });
+
   const contex: IAppContext = {
+    add,
+    plan,
     personalInfo,
     fieldesValidations,
+    setAdd,
+    setPlan,
     setPersonalInfo,
     setFieldsValidations
   };
