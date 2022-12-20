@@ -5,8 +5,14 @@ import styles from '../styles/Steps.module.css';
 
 function StepOne() {
   const ctx = useContext(appContext);
-  const { name, email, phone } = ctx?.personalInfo as IPersonalInfo;
-  const { nameError, emailError, phoneError } = ctx?.fieldesValidations as IfieldsValidations;
+
+  const { 
+    name, email, phone
+  } = ctx?.personalInfo as IPersonalInfo;
+
+  const { 
+    nameError, emailError, phoneError 
+  } = ctx?.fieldesValidations as IfieldsValidations;
 
   function maskPhone(value: string) {
     value = value.replace(/\D/g, '');
@@ -38,8 +44,10 @@ function StepOne() {
           <input
             type='text'
             id='name'
+            name='name'
             value={ name }
             placeholder='e.g. Stephen King'
+            autoComplete="off"
             className={
               `
               ${styles['input-box-input']}
@@ -64,6 +72,7 @@ function StepOne() {
             type='email'
             id='email'
             value={ email }
+            autoComplete='off'
             placeholder='e.g. stephenking@lorem.com'
             className={
               `
@@ -88,7 +97,9 @@ function StepOne() {
           <input
             type='tel'
             id='phone'
+            name='phone'
             value={ phone }
+            autoComplete="off"
             placeholder='e.g. (00) 00000-0000'
             className={
               `
@@ -98,10 +109,6 @@ function StepOne() {
             }
             onChange={
               ({ target }) => {
-                // ctx?.setPersonalInfo({
-                //   ...ctx.personalInfo,
-                //   phone: target.value
-                // });
                 maskPhone(target.value);
               }
             }
