@@ -69,12 +69,17 @@
   transition: .4s ease-in-out;
 }
 
+.card-selected {
+  background-color: var(--magnolia);
+  border: 1px solid var(--purplish);
+}
+
 .card:hover {
   border-color: var(--purplish);
 }
 
 .info {
-  padding-top: 2em;
+  padding-top: 1em;
 }
 
 .info p {
@@ -85,6 +90,14 @@
 .info span {
   color: var(--cool);
   font-size: .8em;
+}
+
+.info small {
+  display: block;
+  color: var(--marine);
+  font-weight: 500;
+  font-size: .7em;
+  padding: 0.5em 0 0;
 }
 
 .period {
@@ -101,6 +114,10 @@
   font-weight: 700;
   color: var(--cool);
   font-size: .9em;
+}
+
+.period .period-selected {
+  color: var(--marine);
 }
 
 /* SWITCH */
@@ -221,4 +238,9 @@ input:checked + .slider:before {
 
 .box-card-add-ons .card .info {
   padding: 0;
+}
+
+.price {
+  color: var(--purplish);
+  font-size: 0.9em;
 }
