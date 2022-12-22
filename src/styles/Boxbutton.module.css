@@ -37,3 +37,14 @@
 .container .go_back:hover {
   color: var(--marine);
 }
+
+@media (max-width: 596px) {
+  .container {
+    position: absolute;
+    bottom: 0;
+    background-color: var(--white);
+    width: 100%;
+    align-items: center;
+    padding: 1.5em;
+  }
+}

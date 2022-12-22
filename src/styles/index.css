@@ -49,3 +49,9 @@ main {
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 596px) {
+  main {
+    position: relative;
+  }
+}

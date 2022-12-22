@@ -22,7 +22,8 @@
 .sidebar > div span {
   border: 1px solid var(--lightgray);
   color: var(--lightgray);
-  font-size: small;
+  font-size: large;
+  font-weight: 700;
   border-radius: 50%;
   width: 25px;
   height: 25px;
@@ -32,7 +33,7 @@
 }
 
 .sidebar .selected-step {
-  background-color: var(--magnolia);
+  background-color: var(--light);
   color: var(--marine);
 }
 
@@ -49,4 +50,36 @@
   font-weight: 500;
   font-size: 1em;
   padding-top: 0.25em;
+}
+
+@media (max-width: 596px) {
+  .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    border-radius: 0;
+    background-image: url('../assets/images/bg-sidebar-mobile.svg');
+    flex-direction: row;
+    justify-content: center;
+    height: 25vh;
+    z-index: 1;
+  }
+
+  .sidebar > div {
+    width: auto;
+    margin-top: 4vh;
+    padding: .5em;
+  }
+
+  .sidebar > div span {
+    width: 40px;
+    height: 40px;
+  }
+
+  .sidebar .text_step {
+    width: 0;
+    height: 0;
+    overflow: auto;
+  }
 }
