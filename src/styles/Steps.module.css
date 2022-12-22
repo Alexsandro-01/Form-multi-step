@@ -43,6 +43,8 @@
 
 .invalid {
   border: 1px solid #ed3548;
+  /* outline-style: solid; */
+  outline-color: #ed3548;
 }
 
 /* Step two */
@@ -243,4 +245,82 @@ input:checked + .slider:before {
 .price {
   color: var(--purplish);
   font-size: 0.9em;
+}
+
+/* step four */
+ul {
+  list-style: none;
+  background-color: var(--magnolia);
+  border-radius: .5em;
+  padding: 1em;
+  margin-top: .5em;
+}
+
+.adds {
+  padding: .5em 0;
+}
+
+ul  li:first-child {
+  padding-bottom: 1em;
+  margin-bottom: .5em;
+  border-bottom: 1px solid var(--lightgray);
+}
+
+ul li:first-child p, ul li:first-child span {
+  color: var(--marine);
+  font-size: .9em;
+  font-weight: 700;
+}
+
+ul li:first-child small {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul li span {
+  font-size: .9em;
+  font-weight: 500;
+  color: var(--marine);
+}
+
+ul li p, ul li small {
+  text-transform: capitalize;
+  color: var(--cool);
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em 1em;
+}
+
+.total small {
+  color: var(--cool);
+}
+
+.total span {
+  color: var(--purplish);
+  font-weight: 700;
+}
+
+/* Step five */
+.finish {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.finish img {
+  padding: 1em;
+}
+
+.finish p {
+  line-height: 1.3rem;
+  font-size: 1em;
 }

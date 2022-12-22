@@ -12,9 +12,9 @@ export interface IPlan {
 }
 
 export interface IAdd {
-  onlineService: boolean,
-  largeStorage: boolean,
-  customizableProfile: boolean
+  'online Service': boolean,
+  'large Storage': boolean,
+  'customizable Profile': boolean
 }
 
 export interface IAppContext {

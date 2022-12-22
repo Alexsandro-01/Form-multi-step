@@ -5,10 +5,7 @@ import { IAdd, IPlan } from '../interfaces/IContext';
 
 const StepThree = () => {
   const ctx = useContext(AppContext);
-  const { 
-    onlineService,
-    largeStorage,
-    customizableProfile } = ctx?.add as IAdd;
+  const add = ctx?.add as IAdd;
   
   const { period } = ctx?.plan as IPlan;
 
@@ -26,7 +23,7 @@ const StepThree = () => {
         <label htmlFor='service' className={
             `
             ${styles.card}
-            ${onlineService && (styles['card-selected'])}
+            ${add['online Service'] && (styles['card-selected'])}
             `
           }>
           <div className={styles.content}>
@@ -34,11 +31,11 @@ const StepThree = () => {
               <input
                 type="checkbox"
                 id='service'
-                checked={onlineService}
+                checked={add['online Service']}
                 onChange={() => {
                   ctx?.setAdd({
                     ...ctx.add,
-                    onlineService: !onlineService
+                    'online Service': !add['online Service']
                   });
                 }}
               />
@@ -62,7 +59,7 @@ const StepThree = () => {
         <label htmlFor='storage' className={
             `
             ${styles.card}
-            ${largeStorage && (styles['card-selected'])}
+            ${add['large Storage'] && (styles['card-selected'])}
             `
           }>
           <div className={styles.content}>
@@ -70,11 +67,11 @@ const StepThree = () => {
               <input
                 type="checkbox"
                 id='storage'
-                checked={largeStorage}
+                checked={add['large Storage']}
                 onChange={() => {
                   ctx?.setAdd({
                     ...ctx.add,
-                    largeStorage: !largeStorage
+                    'large Storage': !add['large Storage']
                   });
                 }}
               />
@@ -98,7 +95,7 @@ const StepThree = () => {
         <label htmlFor='profile' className={
             `
             ${styles.card}
-            ${customizableProfile && (styles['card-selected'])}
+            ${add['customizable Profile'] && (styles['card-selected'])}
             `
           }>
           <div className={styles.content}>
@@ -106,11 +103,11 @@ const StepThree = () => {
               <input
                 type="checkbox"
                 id='profile'
-                checked={customizableProfile}
+                checked={add['customizable Profile']}
                 onChange={() => {
                   ctx?.setAdd({
                     ...ctx.add,
-                    customizableProfile: !customizableProfile
+                    'customizable Profile': !add['customizable Profile']
                   });
                 }}
               />

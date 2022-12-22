@@ -23,10 +23,17 @@ function Boxbuttons({ step, handleStep }: IButtons) {
       </div>
 
       <button
-        className={styles.next_step}
+        className={
+          `
+          ${styles.next_step}
+          ${step === 4 ? styles.confirm : ''}
+          `
+        }
         type='submit'
       >
-        Next Step
+        {
+          step === 4 ? 'Confirm' : 'Next Step'
+        }
       </button>
     </div>
   );

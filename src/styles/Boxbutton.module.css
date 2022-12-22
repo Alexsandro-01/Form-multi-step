@@ -17,8 +17,11 @@
   background-color: var(--marine);
   color: var(--white);
   border-radius: 0.5em;
-  /* align-self: flex-end; */
   justify-self: left;
+}
+
+.container .confirm {
+  background-color: var(--purplish);
 }
 
 .container .next_step:hover {

@@ -21,9 +21,9 @@ function AppProvider(props: PropsWithChildren<unknown>) {
   });
 
   const [add, setAdd] = useState({
-    onlineService: false,
-    largeStorage: false,
-    customizableProfile: false
+    'online Service': false,
+    'large Storage': false,
+    'customizable Profile': false
   });
 
   const contex: IAppContext = {

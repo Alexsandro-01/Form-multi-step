@@ -9,6 +9,8 @@ import styles from './styles/App.module.css';
 
 import AppContext from './context/AppContext';
 import { IPersonalInfo } from './interfaces/IContext';
+import StepFour from './components/StepFour';
+import Finish from './components/Finish';
 
 function App() {
   const [step, setStep] = useState<number>(1);
@@ -17,7 +19,9 @@ function App() {
   const steps: Record<number, JSX.Element> = {
     1: <StepOne />,
     2: <StepTwo />,
-    3: <StepThree />
+    3: <StepThree />,
+    4: <StepFour setStep={setStep} />,
+    5: <Finish />
   };
 
   function validations(value: number) {
@@ -73,22 +77,28 @@ function App() {
     validations(value);
   }
   return (
-  <main>
-    <section className={styles.container}>
-      <Sidebar />
+    <main>
+      <section className={styles.container}>
+        <Sidebar step={step} />
 
-      <form onSubmit={(e) => handleStep(step + 1, e)}>
-        {
-          steps[step]
-        }
+        <form
+          onSubmit={(e) => handleStep(step + 1, e)}
+        >
+          {
+            steps[step]
+          }
 
-        <Boxbuttons
-          step={step}
-          handleStep={handleStep}
-        />
-      </form>
-    </section>
-  </main>
+          {
+            step !== 5 && (
+              <Boxbuttons
+                step={step}
+                handleStep={handleStep}
+              />
+            )
+          }
+        </form>
+      </section>
+    </main>
   );
 }
 
