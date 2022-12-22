@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "http://localhost:4000/static/css/main.17d4cc59.css",
-    "main.js": "http://localhost:4000/static/js/main.404eab6e.js",
-    "static/js/787.bf36a60c.chunk.js": "http://localhost:4000/static/js/787.bf36a60c.chunk.js",
-    "static/media/Ubuntu-Regular.ttf": "http://localhost:4000/static/media/Ubuntu-Regular.1cbb1b79a23478cc89ad.ttf",
-    "static/media/Ubuntu-Medium.ttf": "http://localhost:4000/static/media/Ubuntu-Medium.e37c5546eb1a6efc4818.ttf",
-    "static/media/Ubuntu-Bold.ttf": "http://localhost:4000/static/media/Ubuntu-Bold.fec2d0f1431a6114a6ce.ttf",
-    "static/media/bg-sidebar-desktop.svg": "http://localhost:4000/static/media/bg-sidebar-desktop.6918153f38678372ceb1.svg",
-    "static/media/bg-sidebar-mobile.svg": "http://localhost:4000/static/media/bg-sidebar-mobile.ad41661b40ca0b967f3a.svg",
-    "static/media/icon-advanced.svg": "http://localhost:4000/static/media/icon-advanced.705bd10c4c1f688871d729633f0ca4ae.svg",
-    "static/media/icon-thank-you.svg": "http://localhost:4000/static/media/icon-thank-you.ee753f231cc5a5789b8eb922a96472c0.svg",
-    "index.html": "http://localhost:4000/index.html",
-    "static/media/icon-pro.svg": "http://localhost:4000/static/media/icon-pro.2e7e377da9c658d608624304a0f8dae6.svg",
-    "static/media/icon-arcade.svg": "http://localhost:4000/static/media/icon-arcade.a08c098289a31bb2f66d675be71565b3.svg",
-    "static/media/icon-checkmark.svg": "http://localhost:4000/static/media/icon-checkmark.6ba72db67010be44885b.svg",
-    "main.17d4cc59.css.map": "http://localhost:4000/static/css/main.17d4cc59.css.map",
-    "main.404eab6e.js.map": "http://localhost:4000/static/js/main.404eab6e.js.map",
-    "787.bf36a60c.chunk.js.map": "http://localhost:4000/static/js/787.bf36a60c.chunk.js.map"
+    "main.css": "https://alexsandro-01.github.io/Form-multi-step/static/css/main.6ee3452e.css",
+    "main.js": "https://alexsandro-01.github.io/Form-multi-step/static/js/main.0097b9e8.js",
+    "static/js/787.bf36a60c.chunk.js": "https://alexsandro-01.github.io/Form-multi-step/static/js/787.bf36a60c.chunk.js",
+    "static/media/Ubuntu-Regular.ttf": "https://alexsandro-01.github.io/Form-multi-step/static/media/Ubuntu-Regular.1cbb1b79a23478cc89ad.ttf",
+    "static/media/Ubuntu-Medium.ttf": "https://alexsandro-01.github.io/Form-multi-step/static/media/Ubuntu-Medium.e37c5546eb1a6efc4818.ttf",
+    "static/media/Ubuntu-Bold.ttf": "https://alexsandro-01.github.io/Form-multi-step/static/media/Ubuntu-Bold.fec2d0f1431a6114a6ce.ttf",
+    "static/media/bg-sidebar-desktop.svg": "https://alexsandro-01.github.io/Form-multi-step/static/media/bg-sidebar-desktop.6918153f38678372ceb1.svg",
+    "static/media/bg-sidebar-mobile.svg": "https://alexsandro-01.github.io/Form-multi-step/static/media/bg-sidebar-mobile.ad41661b40ca0b967f3a.svg",
+    "static/media/icon-advanced.svg": "https://alexsandro-01.github.io/Form-multi-step/static/media/icon-advanced.705bd10c4c1f688871d729633f0ca4ae.svg",
+    "static/media/icon-thank-you.svg": "https://alexsandro-01.github.io/Form-multi-step/static/media/icon-thank-you.ee753f231cc5a5789b8eb922a96472c0.svg",
+    "index.html": "https://alexsandro-01.github.io/Form-multi-step/index.html",
+    "static/media/icon-pro.svg": "https://alexsandro-01.github.io/Form-multi-step/static/media/icon-pro.2e7e377da9c658d608624304a0f8dae6.svg",
+    "static/media/icon-arcade.svg": "https://alexsandro-01.github.io/Form-multi-step/static/media/icon-arcade.a08c098289a31bb2f66d675be71565b3.svg",
+    "static/media/icon-checkmark.svg": "https://alexsandro-01.github.io/Form-multi-step/static/media/icon-checkmark.6ba72db67010be44885b.svg",
+    "main.6ee3452e.css.map": "https://alexsandro-01.github.io/Form-multi-step/static/css/main.6ee3452e.css.map",
+    "main.0097b9e8.js.map": "https://alexsandro-01.github.io/Form-multi-step/static/js/main.0097b9e8.js.map",
+    "787.bf36a60c.chunk.js.map": "https://alexsandro-01.github.io/Form-multi-step/static/js/787.bf36a60c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.17d4cc59.css",
-    "static/js/main.404eab6e.js"
+    "static/css/main.6ee3452e.css",
+    "static/js/main.0097b9e8.js"
   ]
 }
