@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/multi-step-form/static/css/main.8e76de0c.css",
-    "main.js": "/multi-step-form/static/js/main.bbc6d828.js",
-    "static/js/787.bf36a60c.chunk.js": "/multi-step-form/static/js/787.bf36a60c.chunk.js",
-    "static/media/Ubuntu-Regular.ttf": "/multi-step-form/static/media/Ubuntu-Regular.1cbb1b79a23478cc89ad.ttf",
-    "static/media/Ubuntu-Medium.ttf": "/multi-step-form/static/media/Ubuntu-Medium.e37c5546eb1a6efc4818.ttf",
-    "static/media/Ubuntu-Bold.ttf": "/multi-step-form/static/media/Ubuntu-Bold.fec2d0f1431a6114a6ce.ttf",
-    "static/media/bg-sidebar-desktop.svg": "/multi-step-form/static/media/bg-sidebar-desktop.6918153f38678372ceb1.svg",
-    "static/media/bg-sidebar-mobile.svg": "/multi-step-form/static/media/bg-sidebar-mobile.ad41661b40ca0b967f3a.svg",
-    "static/media/icon-advanced.svg": "/multi-step-form/static/media/icon-advanced.705bd10c4c1f688871d729633f0ca4ae.svg",
-    "static/media/icon-thank-you.svg": "/multi-step-form/static/media/icon-thank-you.ee753f231cc5a5789b8eb922a96472c0.svg",
-    "index.html": "/multi-step-form/index.html",
-    "static/media/icon-pro.svg": "/multi-step-form/static/media/icon-pro.2e7e377da9c658d608624304a0f8dae6.svg",
-    "static/media/icon-arcade.svg": "/multi-step-form/static/media/icon-arcade.a08c098289a31bb2f66d675be71565b3.svg",
-    "static/media/icon-checkmark.svg": "/multi-step-form/static/media/icon-checkmark.6ba72db67010be44885b.svg",
-    "main.8e76de0c.css.map": "/multi-step-form/static/css/main.8e76de0c.css.map",
-    "main.bbc6d828.js.map": "/multi-step-form/static/js/main.bbc6d828.js.map",
-    "787.bf36a60c.chunk.js.map": "/multi-step-form/static/js/787.bf36a60c.chunk.js.map"
+    "main.css": "/Form-multi-step/static/css/main.0e901fa1.css",
+    "main.js": "/Form-multi-step/static/js/main.d4b9b92f.js",
+    "static/js/787.bf36a60c.chunk.js": "/Form-multi-step/static/js/787.bf36a60c.chunk.js",
+    "static/media/Ubuntu-Regular.ttf": "/Form-multi-step/static/media/Ubuntu-Regular.1cbb1b79a23478cc89ad.ttf",
+    "static/media/Ubuntu-Medium.ttf": "/Form-multi-step/static/media/Ubuntu-Medium.e37c5546eb1a6efc4818.ttf",
+    "static/media/Ubuntu-Bold.ttf": "/Form-multi-step/static/media/Ubuntu-Bold.fec2d0f1431a6114a6ce.ttf",
+    "static/media/bg-sidebar-desktop.svg": "/Form-multi-step/static/media/bg-sidebar-desktop.6918153f38678372ceb1.svg",
+    "static/media/bg-sidebar-mobile.svg": "/Form-multi-step/static/media/bg-sidebar-mobile.ad41661b40ca0b967f3a.svg",
+    "static/media/icon-advanced.svg": "/Form-multi-step/static/media/icon-advanced.705bd10c4c1f688871d729633f0ca4ae.svg",
+    "static/media/icon-thank-you.svg": "/Form-multi-step/static/media/icon-thank-you.ee753f231cc5a5789b8eb922a96472c0.svg",
+    "index.html": "/Form-multi-step/index.html",
+    "static/media/icon-pro.svg": "/Form-multi-step/static/media/icon-pro.2e7e377da9c658d608624304a0f8dae6.svg",
+    "static/media/icon-arcade.svg": "/Form-multi-step/static/media/icon-arcade.a08c098289a31bb2f66d675be71565b3.svg",
+    "static/media/icon-checkmark.svg": "/Form-multi-step/static/media/icon-checkmark.6ba72db67010be44885b.svg",
+    "main.0e901fa1.css.map": "/Form-multi-step/static/css/main.0e901fa1.css.map",
+    "main.d4b9b92f.js.map": "/Form-multi-step/static/js/main.d4b9b92f.js.map",
+    "787.bf36a60c.chunk.js.map": "/Form-multi-step/static/js/787.bf36a60c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e76de0c.css",
-    "static/js/main.bbc6d828.js"
+    "static/css/main.0e901fa1.css",
+    "static/js/main.d4b9b92f.js"
   ]
 }
