@@ -1,7 +1,7 @@
 # Multi Step Form
 
 ## Contexto
-Encontrei o desafio de criar um formulário com multi steps no site de desafios para front-end [Fontendmentor](https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ). O desafio conta com varias imagens do layout que dev ser alcaçado, tanto no Desktop quanto no mobile, eu gosto bastante dos desafios que eles disponibilizam na plataforma.
+Encontrei o desafio de criar um formulário com multi steps no site de desafios para front-end [Fontendmentor](https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ). O desafio conta com varias imagens do layout que deve ser alcaçado, tanto no Desktop quanto no mobile, eu gosto bastante dos desafios que eles disponibilizam na plataforma.
 
 A ideia do projeto é uma aplicação de formulário com multiplos passos para o usuário seguir. É muito chato preencher formulários muito longos e a chance de um usuário desistir é grande. Quebar um formulário em partes menores é uma ótima estratégia para reter o usuário.
 
