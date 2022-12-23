@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "https://alexsandro-01.github.io/Form-multi-step/static/css/main.6ee3452e.css",
-    "main.js": "https://alexsandro-01.github.io/Form-multi-step/static/js/main.0097b9e8.js",
+    "main.css": "https://alexsandro-01.github.io/Form-multi-step/static/css/main.7227d0b8.css",
+    "main.js": "https://alexsandro-01.github.io/Form-multi-step/static/js/main.fe8465f7.js",
     "static/js/787.bf36a60c.chunk.js": "https://alexsandro-01.github.io/Form-multi-step/static/js/787.bf36a60c.chunk.js",
     "static/media/Ubuntu-Regular.ttf": "https://alexsandro-01.github.io/Form-multi-step/static/media/Ubuntu-Regular.1cbb1b79a23478cc89ad.ttf",
     "static/media/Ubuntu-Medium.ttf": "https://alexsandro-01.github.io/Form-multi-step/static/media/Ubuntu-Medium.e37c5546eb1a6efc4818.ttf",
@@ -14,12 +14,12 @@
     "static/media/icon-pro.svg": "https://alexsandro-01.github.io/Form-multi-step/static/media/icon-pro.2e7e377da9c658d608624304a0f8dae6.svg",
     "static/media/icon-arcade.svg": "https://alexsandro-01.github.io/Form-multi-step/static/media/icon-arcade.a08c098289a31bb2f66d675be71565b3.svg",
     "static/media/icon-checkmark.svg": "https://alexsandro-01.github.io/Form-multi-step/static/media/icon-checkmark.6ba72db67010be44885b.svg",
-    "main.6ee3452e.css.map": "https://alexsandro-01.github.io/Form-multi-step/static/css/main.6ee3452e.css.map",
-    "main.0097b9e8.js.map": "https://alexsandro-01.github.io/Form-multi-step/static/js/main.0097b9e8.js.map",
+    "main.7227d0b8.css.map": "https://alexsandro-01.github.io/Form-multi-step/static/css/main.7227d0b8.css.map",
+    "main.fe8465f7.js.map": "https://alexsandro-01.github.io/Form-multi-step/static/js/main.fe8465f7.js.map",
     "787.bf36a60c.chunk.js.map": "https://alexsandro-01.github.io/Form-multi-step/static/js/787.bf36a60c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ee3452e.css",
-    "static/js/main.0097b9e8.js"
+    "static/css/main.7227d0b8.css",
+    "static/js/main.fe8465f7.js"
   ]
 }
