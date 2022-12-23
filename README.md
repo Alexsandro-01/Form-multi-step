@@ -49,7 +49,13 @@ Quando você roda usando o server de desenvolvimento do webpack ele já coloca e
 npm install
 ``` 
 
-3. Acesse a aplicação no seu browser;
+3. Iniciando a aplicação;
+
+```bash
+npm start
+```
+
+4. Acesse a aplicação no seu browser;
 
 ```
 http://localhost:3000/
