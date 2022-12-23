@@ -1,46 +1,54 @@
-# Getting Started with Create React App
+# Multi Step Form
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Contexto
+Encontrei o desafio de criar um formulário com multi steps no site de desafios para front-end [Fontendmentor](https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ). O desafio conta com varias imagens do layout que dev ser alcaçado, tanto no Desktop quanto no mobile, eu gosto bastante dos desafios que eles disponibilizam na plataforma.
 
-## Available Scripts
+A ideia do projeto é uma aplicação de formulário com multiplos passos para o usuário seguir. É muito chato preencher formulários muito longos e a chance de um usuário desistir é grande. Quebar um formulário em partes menores é uma ótima estratégia para reter o usuário.
 
-In the project directory, you can run:
+# 
+## Principais desafios que encontrei
 
-### `npm start`
+* O primeiro foi criar inputs do tipo checkbox personalizados, já que eles não aceitam estilização. Contornei isso adicionando uma tag span que alterava a estilização se o checkbox estava marcado ou não, e deixei o checkbox original escondido para apenas o span personalizado estar visível.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* Em segundo foi criar um input do tipo switch. Consegui usando um tutorial do `W3Schools`. Nesse tutorial também aprendi sobre a pseudoclass `:before` e `:after`.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* `Exemplo de switch`
 
-### `npm test`
+<img width="50%" style="margin: 0 0 25px 25px" src="src/assets/images/switch.gif" alt="Exemplo de switch">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Ao fazer o deploy no Github pages a página não funcionava. Depois de uma rápida pesquisa, descobri que precisava criar uma variável de ambiente com o endereço onde a página seria servida. 
+Quando você roda usando o server de desenvolvimento do webpack ele já coloca essa variável automaticamente com o endereço certo. No caso em que você vá servir os arquivos num servidor seu, é necessário criar essa variável antes de rodar o `npm run build`. Então adicionei um arquivo `.env` com a variável e tudo funcionou corretamente.
 
-### `npm run build`
+```env
+  PUBLIC_URL=https://alexsandro-01.github.io/Form-multi-step/
+```
+# 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tecnologias usadas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* `React`
+* `Typescript`
+* `Css-modules`
+* `Git`
+* `Github pages`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Executando a aplicação
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Fazendo o clone;
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+  git clone git@github.com:Alexsandro-01/Form-multi-step.git
+``` 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+2. Instalando as dependências;
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+npm install
+``` 
 
-## Learn More
+3. Acesse a aplicação no seu browser;
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+http://localhost:3000/
+```
