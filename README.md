@@ -5,6 +5,8 @@ Encontrei o desafio de criar um formulário com multi steps no site de desafios 
 
 A ideia do projeto é uma aplicação de formulário com multiplos passos para o usuário seguir. É muito chato preencher formulários muito longos e a chance de um usuário desistir é grande. Quebar um formulário em partes menores é uma ótima estratégia para reter o usuário.
 
+### `Caso queira acessar a página da aplicação` [clique aqui](https://alexsandro-01.github.io/Form-multi-step/)
+
 # 
 ## Principais desafios que encontrei
 
