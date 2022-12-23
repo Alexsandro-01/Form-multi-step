@@ -22,7 +22,7 @@
 .sidebar > div span {
   border: 1px solid var(--lightgray);
   color: var(--lightgray);
-  font-size: large;
+  font-size: 1.2em;
   font-weight: 700;
   border-radius: 50%;
   width: 25px;
@@ -68,13 +68,14 @@
 
   .sidebar > div {
     width: auto;
-    margin-top: 4vh;
+    margin-top: 3vh;
     padding: .5em;
   }
 
   .sidebar > div span {
     width: 40px;
     height: 40px;
+    font-size: large;
   }
 
   .sidebar .text_step {

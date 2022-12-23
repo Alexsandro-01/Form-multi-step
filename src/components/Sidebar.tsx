@@ -55,7 +55,7 @@ function Sidebar({ step }: { step: number }) {
       <div>
         <span
           className={
-            step === 4 ?
+            step === 4 || step === 5 ?
               (styles['selected-step']) : ''
           }
         >
