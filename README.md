@@ -1,5 +1,9 @@
 # Multi Step Form
 
+
+https://user-images.githubusercontent.com/73038442/211033430-cefd68c8-6827-43bd-a6df-5cae7a998255.mp4
+
+
 ## Contexto
 Encontrei o desafio de criar um formulário com multi steps no site de desafios para front-end [Fontendmentor](https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ). O desafio conta com varias imagens do layout que deve ser alcançado, tanto no Desktop quanto no mobile, eu gosto bastante dos desafios que eles disponibilizam na plataforma.
 
